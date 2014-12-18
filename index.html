@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+        <meta charset="utf-8" />
+        <title>我的UI</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="" />
+        <meta name="author" content="stilearning" />
+
+        <!-- google font <link href="http://fonts.googleapis.com/css?family=Aclonica:regular" rel="stylesheet" type="text/css" />  -->
+   <!-- styles -->
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link href="css/bootstrap-theme.css" rel="stylesheet" />
+        <link href="css/stilearn.css" rel="stylesheet" />
+        <link href="css/stilearn-helper.css" rel="stylesheet" />
+        <link rel="stylesheet" href="Font-Awesome-3.2.1/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="css/component.css"/>
+        <link rel="stylesheet" href="style.css"/>
+	    <link rel="stylesheet" href="bootstrap-switch/css/bootstrap-switch.css" />
+	   <link rel="stylesheet" href="bootstrap-datetimepicker/css/bootstrap-datetimepicker.css" />
+        
+        <!--[if lt IE 9]><script src="docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.3.0/respond.min.js"></script>     <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
+    <body>
+        <!-- section header -->
+        <header class=" header navbar navbar-inverse navbar-fixed-top grd-meitu" >
+                    <!--panel site-name-->
+               <div class="navbar-helper">
+                    <div class=" col-md-2 panel-logo">
+                     <div class="logo-nav " id="showLeft" title="点击显示菜单" ></div>
+                      <div class="panel-sitename col-md-9">
+                            <h2>tanyayin</h2>
+                        </div>
+                    </div>
+                    <!--/panel name-->
+                    <!--nav mainpage-->
+                    <div class="col-md-6">
+                          <div class="navbar-collapse collapse panel-search">
+                                <ul class="nav navbar-nav">
+                                   <li class="active"><a href="#">工作</a></li>
+                                   <li><a href="#">工作</a></li>
+                                   <li><a href="#">工作</a></li>
+                                   <li><a href="#">工作</a></li>
+                                   <li><a href="#">工作</a></li>
+                                </ul>
+                       </div>
+                    </div>
+                    <!--/nav mainpage-->
+                    <div class="col-md-2">
+                        <!--panel search-->
+                        <div class="panel-search">
+                            <form>
+                                <div class="input-icon-append">
+                                    <button type="submit" rel="tooltip-bottom" title="search" class="icon"><i class="icon-search"></i></button>
+                                    <input class="input-lg search-query grd-white" maxlength="24" placeholder="在这里搜索..." type="text" />
+                                </div>
+                            </form>
+                        </div><!--/panel search-->
+                    </div>
+                      <!--userinfo-->
+                    <div class="col-md-2 pull-right">
+                        <!--panel button ext-->
+                        <div class="panel-ext">
+                         <div class="col-md-4">
+                          <div class="badge badge_2 grd-red">4</div>
+                           <div class="helper-font-16 color-white ">消息</div>
+                         </div>
+                            <div class="btn-group user-group col-md-8">
+                                <a class="helper-font-16 panel-ext color-white" data-toggle="dropdown" href="#">
+                                    管理员：<span class="helper-font-14">tanya</span>
+                                     <!--this for display on PC device-->
+                                    <button class="btn btn-sm btn-inverse">tanya</button> <!--this for display on tablet and phone device-->
+                                </a>
+                                <ul class="dropdown-menu dropdown-user" role="menu" aria-labelledby="dLabel">
+                                    <li>
+                                        <div class="media">
+                                            <a class="pull-left" href="#">
+                                                <img class="img-circle" src="img/user.jpg" title="profile" alt="profile" />
+                                            </a>
+                                            <div class="media-body description">
+                                                <p><strong>李四</strong></p>
+                                                <p class="muted">johndoe@mail.com</p>
+                                                <p class="action"><a class="link" href="#">活动</a> - <a class="link" href="#">设置</a></p>
+                                                <a class="btn btn-primary btn-sm btn-block">查看资料</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-footer">
+                                        <div>
+                                            <a class="btn btn-sm pull-right" href="login.html">注销</a>
+                                            <a class="btn btn-sm" href="#">新增账户</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!--panel button ext-->
+                    </div>
+                    <!-- / userinfo-->
+               </div>
+        </header>
+        <section>
+            <div class="row">
+                <!-- span side-left -->
+                <div class="col-md-1">
+                    <!--side bar-->
+			    <ul id="gn-menu" class="gn-menu-main">
+				<li class="gn-trigger">
+					<nav class="gn-menu-wrapper">
+						<div class="gn-scroller">
+							<ul class="gn-menu">
+                                <li><a class="gn-icon-menu"><i class="icon-reorder lef_ioc"></i>工作</a></li>
+								<li><a class="gn-icon"><i class="icon-minus-sign lef_ioc"></i>未工作</a>
+								</li>
+								<li><a class="gn-icon"><i class="icon-ok-sign lef_ioc"></i>已工作</a></li>
+								<li><a class="gn-icon"><i class="icon-minus lef_ioc"></i>未工作</a></li>
+								<li><a class="gn-icon"><i class="icon-ok lef_ioc"></i>工作</a>
+								</li>
+                                 <li><a class="gn-icon"><i class="icon-share-alt lef_ioc"></i>工作</a></li>
+								<li><a class="gn-icon"><i class="icon-reply lef_ioc"></i>工作</a></li>
+							</ul>
+						</div><!-- /gn-scroller -->
+					</nav>
+				</li>
+				
+			   </ul>
+
+                    <!--/side bar -->
+                </div><!-- span side-left -->
+                <!-- span content -->
+                <div class=" col-md-11">
+                    <!-- content -->
+                    <div class="content">
+                        <!-- content-header -->
+                         <!--title -->
+                        <div class="content-header row">
+                            <div class="col-md-2">
+                             <h2 class="col-md-6 yy_top"><i class="icon-calendar"></i> 工作</h2>
+                             <a href="#"><div class="col-md-6"><button type="button" class="btn btn-default"  data-toggle="modal"                               data-target="#modalNewOrder">增加</button></div></a>
+                             </div>
+                            <ul class="content-header-action pull-right">
+                                <li>
+                                        <div class="badge-circle"><i class="icon-check-empty "></i><span>待工作</span></div>
+                                </li>
+                                
+                                <li>
+                                        <div class="badge-circle"><i class="icon-sign-blank color-sky2"></i><span>今天工作</span></div>
+                                </li>
+                                <li>
+                                        <div class="badge-circle"><i class="icon-sign-blank  color-green2"></i><span>已工作</span></div>
+                                </li>
+<li>
+                                        <div class="badge-circle"><i class="icon-sign-blank  color-red2"></i><span>工作</span></div>
+                                </li>                                
+                            </ul>
+
+                               </div>
+                        
+                 <!-- 增加弹出框 -->
+                <div class="modal fade" id="modalNewOrder" data-backdrop="static">
+	<div class="modal-dialog" style="width: 800px;">
+		<div class="modal-content">
+			<div class="modal-header">
+            	<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">增加新工作/h4>
+			</div>
+			<div class="modal-body">
+
+	<!-- form start -->
+	<form class="formNewOrder form-horizontal form-condensed" id="formNewOrder" style="height: 333px;">
+
+		<div class="left col-md-4" id="formLeft" style="height: 362px;">
+
+			<div class="form-group">
+				<label for="inputtext3" class="col-sm-4 control-label">工作</label>
+				<div class="col-sm-4">
+					<input type="text" class="form-control" id="inputtext3" placeholder="">
+				</div>
+				<label for="inputtext3" class="col-sm-2 control-label">工作</label>
+				<div class="col-sm-2">
+					<input type="text" class="form-control" id="inputtext3" placeholder="">
+				</div>
+			</div>
+			<div class="form-group group-tel1">
+				<label for="inputtext3" class="col-sm-4 control-label">电话</label>
+				<div class="col-sm-7">
+					<input type="text" class="form-control" id="inputtext3" placeholder="">
+				</div>
+				<div class="col-sm-1 append">
+					<a href="javascript:void(0)" data="tel2" class="btnAppendTel"><i class=" helper-font-16 ion-color icon-plus-sign"></i></a>
+				</div>
+			</div>
+			<div class="form-group group-tel2">
+				<div class="col-sm-7 col-sm-offset-4">
+					<input type="text" class="form-control" id="inputtext3" placeholder="">
+				</div>
+
+				<div class="col-sm-1 append">
+					<a href="javascript:void(0)" data="tel3" class="btnAppendTel"><i class="helper-font-16 ion-color icon-plus-sign"></i></a>
+				</div>
+			</div>
+			<div class="form-group group-tel3">
+				<div class="col-sm-7 col-sm-offset-4">
+					<input type="text" class="form-control" id="inputtext3" placeholder="">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputtext3" class="col-sm-4 control-label">工作ID</label>
+				<div class="col-sm-8">
+					<input type="text" class="form-control" id="inputtext3" placeholder="工作通/工作通/微信 等">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputtext3" class="col-sm-4 control-label">工作时间</label>
+				<div class="col-sm-8">
+					<input value="2014-03-19"
+						class="make-datetimepicker form-control" data-date-format="yyyy-mm-dd" placeholder="" />
+				</div>
+			</div>
+			<!--<div class="form-group">
+				<label for="inputtext3" class="col-sm-4 control-label">挂号科室</label>
+				<div class="col-sm-8">
+					<select class="form-control" id="inputtext3">
+						<option value="0">---</option>
+						<option value="13">不孕不育科</option>
+						<option value="27">妇科</option>
+						<option value="28">耳鼻喉科</option>
+						<option value="30">神经内科</option>
+						<option value="33">生殖健康</option>
+						<option value="35">结石科</option>
+						<option value="36">男科</option>
+						<option value="37">静脉曲张科</option>
+						<option value="39">不孕不育二组</option>
+						<option value="40">不孕不育科1组</option>
+						<option value="42">2013红会福娃娃大型公益活动</option>  
+					</select>
+				</div>
+			</div>-->
+			<div class="form-group">
+				<label for="inputtext3" class="col-sm-4 control-label">工作人员</label>
+				<div class="col-sm-8">
+					<select class="form-control" id="inputtext3">
+						<option>---</option>
+						<option>赵先生</option>
+						<option>钱先生</option>
+						<option>孙先生</option>
+						<option>李先生</option>
+						<option>周先生</option>
+						<option>吴先生</option>
+						<option>郑先生</option>
+						<option>王先生</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputtext3" class="col-sm-4 control-label">工作</label>
+				<div class="col-sm-8">
+					<select class="form-control" id="inputtext3">
+						<option>---</option>
+						<option value="1">工作</option>
+						<option value="2">工作</option>
+						<option value="3">工作</option>
+						<option value="4">工作查</option>
+						<option value="5">习工作</option>
+						<option value="33">工作</option>
+						<option value="7">工作</option>
+						<option value="8">工作</option>
+						<option value="9">工作调</option>
+						<option value="10">工作失调</option>
+						<option value="11">工作</option>
+						<option value="12">工作</option>
+						<option value="13">工作</option>
+						<option value="14">死精</option>
+						<option value="15">工作工作工作</option>
+						<option value="29">工作</option>
+						<option value="30">工作</option>
+						<option value="18">工作工作</option>
+						<option value="19">工作工作</option>
+						<option value="24">妇科炎症</option>
+						<option value="21">工作工作工作</option>
+						<option value="23">工作工作体</option>
+						<option value="25">工作工作</option>
+						<option value="26">工作工作</option>
+						<option value="27">工作</option>
+						<option value="31">工作工作工作</option>
+						<option value="32">工作工作工作</option>
+						<option value="34">工作工作</option>
+						<option value="35">工作工作</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputtext3" class="col-sm-4 control-label">活动</label>
+				<div class="col-sm-8">
+					<select class="form-control" id="inputtext3">
+						<option value="1">---</option>
+						<option value="1">十一工作</option>
+						<option value="1">仲秋工作</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="right col-md-8" id="formRight" style="height: 362px;">
+			<div class="form-group">
+				<label for="inputtext3" class="col-sm-2 control-label">QQ</label>
+				<div class="col-sm-3">
+					<input type="text" class="form-control" id="inputtext3" placeholder="">
+				</div>
+				<label for="inputtext3" class="col-sm-2 control-label">Email</label>
+				<div class="col-sm-5">
+					<input type="text" class="form-control" id="inputtext3" placeholder="">
+				</div>
+			</div>	
+			<div class="form-group">
+				<label for="inputtext3" class="col-sm-2 control-label">联系地址</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="inputtext3" placeholder="">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputtext3" class="col-sm-2 control-label">工作方式</label>
+				<div class="col-sm-4">
+					<select class="form-control" id="inputtext3">
+						<option>---</option>
+						<option value="14">其他</option>
+						<option value="2">电话</option>
+						<option value="3">商务通</option>
+						<option value="4">QQ</option>
+						<option value="10">400</option>
+						<option value="15">业务电话</option>
+						<option value="16">百度商桥</option>
+						<option value="17">工作</option>
+						<option value="18">手机</option>
+						<option value="19">工作工作通</option>
+						<option value="20">快400</option>
+						<option value="21">工作1</option>
+						<option value="22">网络后台</option>
+						<option value="23">NET11998140</option>
+						<option value="24">NET48384662</option>
+						<option value="25">SWT23339992</option>
+					</select>
+				</div>
+				<label for="inputtext3" class="col-sm-2 control-label">网络平台</label>
+				<div class="col-sm-4">
+					<select class="form-control" id="inputtext3">
+						<option value="0">---</option>
+						<option value="1">baidu</option>
+						<option value="2">谷歌</option>
+						<option value="3">sogou</option>
+						<option value="4">soso</option>
+						<option value="5">有道</option>
+						<option value="6">必应</option>
+						<option value="7">39健康网</option>
+						<option value="8">寻医问药</option>
+						<option value="9">120ask</option>
+						<option value="10">360搜索</option>
+						<option value="11">无搜索轨迹</option>
+						<option value="12">直接进入网站</option>
+						<option value="13">googleads</option>
+						<option value="14">电话</option>
+						<option value="15">400免费电话</option>
+						<option value="16">QQ</option>
+						<option value="17">业务电话</option>
+						<option value="18">无</option>
+						<option value="19">快商务通</option>
+						<option value="27">百度商桥</option>
+						<option value="21">网站后台</option>
+						<option value="22">zhidao.baidu</option>
+						<option value="23">so.360.cn</option>
+						<option value="29">网站回拨</option>
+						<option value="26">新闻源</option>
+						<option value="28">有问必答手机</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputtext3" class="col-sm-2 control-label">网站</label>
+				<div class="col-sm-4">
+					<select class="form-control" id="inputtext3">
+						<option value="0">---</option>
+						<option value="1">ql91.com</option>
+						<option value="2">ql91.cn</option>
+						<option value="3">ql91.com.cn</option>
+						<option value="4">hhfww.cn</option>
+						<option value="5">honghui.org</option>
+						<option value="15">66662666.com</option>
+						<option value="14">sdsmyy.com</option>
+						<option value="13">yunyu7.com</option>
+						<option value="12">99yunyu.com</option>
+						<option value="10">ql91.net</option>
+						<option value="11">sdhhfk.com</option>
+						<option value="16">sdebh.com</option>
+						<option value="17">120ent.com</option>
+						<option value="18">sdjmqz120.com</option>
+						<option value="19">电话</option>
+						<option value="20">无</option>
+						<option value="21">ifuwawa.com</option>
+						<option value="22">m.ql91.com</option>
+						<option value="23">w.bjd.com</option>
+						<option value="24">w.zjrb.cn</option>
+						<option value="25">400.99yunyu.com</option>
+						<option value="26">400.yunyu7.com</option>
+						<option value="27">400.inanke.net</option>
+					</select>
+				</div>
+				<label for="inputtext3" class="col-sm-2 control-label">关键词</label>
+				<div class="col-sm-4">
+					<input type="text" class="form-control" id="inputtext3" placeholder="">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputtext3" class="col-sm-2 control-label">工作描述</label>
+				<div class="col-sm-10">
+					<textarea class="form-control" id="inputtext3" placeholder="" style="height:64px;"></textarea>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputtext3" class="col-sm-2 control-label">工作共享</label>
+				<div class="col-sm-10">
+					<input class="form-control" id="inputtext3" placeholder="" />
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="inputtext3" class="col-sm-2 control-label">备注说明</label>
+				<div class="col-sm-10">
+					<textarea class="form-control" id="inputtext3" placeholder="" style="height:64px;"></textarea>
+				</div>
+			</div>
+		</div>
+
+	</form>
+	<!-- form end -->
+
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal" tabindex="-1">放弃</button>
+				<button type="button" class="btn btn-primary">增加工作</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+                
+                
+                 <!-- /增加弹出框 -->
+                        <!-- /title -->
+                        <!-- /content-header -->
+                        <!-- content-body -->
+                        <div class="content-body">
+                           <div class="row">
+                                <div class="col-md-12">
+                               <table class="table table-bordered">
+                                    <thead>
+                                       <tr class="bg-blu2">
+                                          <th>
+                                          <div class="btn-group">
+                                          <i class="icon-reorder" data-toggle="dropdown"></i>
+                                          <ul class="dropdown-menu">
+                                           <li><button type="button" class="btn btn-default btn-xs" data-toggle="dropdown">全选</button></li>
+                                           <li><button type="button" class="btn btn-default btn-xs" data-toggle="dropdown">反选</button></li>
+                                           <li><button type="button" class="btn btn-default btn-xs" data-toggle="dropdown">审核</button></li>
+                                           <li><button type="button" class="btn btn-default btn-xs" data-toggle="dropdown">删除</button></li>
+                                        
+                                         </ul>
+                                         </div>
+                                          </th>
+                                           <th>工作时间</th>
+                                           <th>姓名</th>
+                                             <th>年龄</th>
+                                              <th>电话</th>
+                                              <th>客服</th>
+                                              <th>完成时间</th>
+                                         </tr>
+                                         
+                                        </thead>
+                                              <tbody>
+                                                    <tr>
+                                                        <td><label><input type="checkbox"></label>
+                                                        </td>
+                                                        <td>2014/04/17</td>
+                                                        <td>张三三</td>
+                                                        <td class="center">17</td>
+                                                        <td class="center">15xxxxxxxxx</td>
+                                                        <td>李一一</td>
+                                                        <td>2014/04/17</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><label><input type="checkbox"></label>
+                                                        </td>
+                                                        <td>2014/04/17</td>
+                                                        <td>张三三</td>
+                                                        <td class="center">17</td>
+                                                        <td class="center">15xxxxxxxxx</td>
+                                                        <td>李一一</td>
+                                                        <td>2014/04/17</td>
+                                                    </tr>
+                                                   
+                                                    <tr>
+                                                        <td><label><input type="checkbox"></label>
+                                                        </td>
+                                                        <td>2014/04/17</td>
+                                                        <td>张三三</td>
+                                                        <td class="center">17</td>
+                                                        <td class="center">15xxxxxxxxx</td>
+                                                        <td>李一一</td>
+                                                        <td>2014/04/17</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><label><input type="checkbox"></label>
+                                                        </td>
+                                                        <td>2014/04/17</td>
+                                                        <td>张三三</td>
+                                                        <td class="center">17</td>
+                                                        <td class="center">15xxxxxxxxx</td>
+                                                        <td>李一一</td>
+                                                        <td>2014/04/17</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><label><input type="checkbox"></label>
+                                                        </td>
+                                                        <td>2014/04/17</td>
+                                                        <td>张三三</td>
+                                                        <td class="center">17</td>
+                                                        <td class="center">15xxxxxxxxx</td>
+                                                        <td>李一一</td>
+                                                        <td>2014/04/17</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><label><input type="checkbox"></label>
+                                                        </td>
+                                                        <td>2014/04/17</td>
+                                                        <td>张三三</td>
+                                                        <td class="center">17</td>
+                                                        <td class="center">15xxxxxxxxx</td>
+                                                        <td>李一一</td>
+                                                        <td>2014/04/17</td>
+                                                    </tr>
+                                                    
+                                                    <tr>
+                                                        <td><label><input type="checkbox"></label>
+                                                        </td>
+                                                        <td>2014/04/17</td>
+                                                        <td>张三三</td>
+                                                        <td class="center">17</td>
+                                                        <td class="center">15xxxxxxxxx</td>
+                                                        <td>李一一</td>
+                                                        <td>2014/04/17</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><label><input type="checkbox"></label>
+                                                        </td>
+                                                        <td>2014/04/17</td>
+                                                        <td>张三三</td>
+                                                        <td class="center">17</td>
+                                                        <td class="center">15xxxxxxxxx</td>
+                                                        <td>李一一</td>
+                                                        <td>2014/04/17</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><label><input type="checkbox"></label>
+                                                        </td>
+                                                        <td>2014/04/17</td>
+                                                        <td>张三三</td>
+                                                        <td class="center">17</td>
+                                                        <td class="center">15xxxxxxxxx</td>
+                                                        <td>李一一</td>
+                                                        <td>2014/04/17</td>
+                                                    </tr>
+                                                    <tr class="bg-green2">
+                                                        <td><label><input type="checkbox"></label>
+                                                        </td>
+                                                        <td>2014/04/17</td>
+                                                        <td>张三三</td>
+                                                        <td class="center">17</td>
+                                                        <td class="center">15xxxxxxxxx</td>
+                                                        <td>李一一</td>
+                                                        <td>2014/04/17</td>
+                                                    </tr>
+                                                    <tr class="bg-green2">
+                                                        <td><label><input type="checkbox"></label>
+                                                        </td>
+                                                        <td>2014/04/17</td>
+                                                        <td>张三三</td>
+                                                        <td class="center">17</td>
+                                                        <td class="center">15xxxxxxxxx</td>
+                                                        <td>李一一</td>
+                                                        <td>2014/04/17</td>
+                                                    </tr>
+                                                    <tr class="bg-green2">
+                                                        <td><label><input type="checkbox"></label>
+                                                        </td>
+                                                        <td>2014/04/17</td>
+                                                        <td>张三三</td>
+                                                        <td class="center">17</td>
+                                                        <td class="center">15xxxxxxxxx</td>
+                                                        <td>李一一</td>
+                                                        <td>2014/04/17</td>
+                                                    </tr>
+                                                    <tr class="bg-orange2">
+                                                        <td><label><input type="checkbox"></label>
+                                                        </td>
+                                                        <td>2014/04/17</td>
+                                                        <td>张三三</td>
+                                                        <td class="center">17</td>
+                                                        <td class="center">15xxxxxxxxx</td>
+                                                        <td>李一一</td>
+                                                        <td>2014/04/17</td>
+                                                    </tr>
+                                                    <tr class="bg-orange2">
+                                                        <td><label><input type="checkbox"></label>
+                                                        </td>
+                                                        <td>2014/04/17</td>
+                                                        <td>张三三</td>
+                                                        <td class="center">17</td>
+                                                        <td class="center">15xxxxxxxxx</td>
+                                                        <td>李一一</td>
+                                                        <td>2014/04/17</td>
+                                                    </tr>
+                                                    <tr class="bg-sky2">
+                                                        <td><label><input type="checkbox"></label>
+                                                        </td>
+                                                        <td>2014/04/17</td>
+                                                        <td>张三三</td>
+                                                        <td class="center">17</td>
+                                                        <td class="center">15xxxxxxxxx</td>
+                                                        <td>李一一</td>
+                                                        <td>2014/04/17</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><label><input type="checkbox"></label>
+                                                        </td>
+                                                        <td>2014/04/17</td>
+                                                        <td>张三三</td>
+                                                        <td class="center">17</td>
+                                                        <td class="center">15xxxxxxxxx</td>
+                                                        <td>李一一</td>
+                                                        <td>2014/04/17</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><label><input type="checkbox"></label>
+                                                        </td>
+                                                        <td>2014/04/17</td>
+                                                        <td>张三三</td>
+                                                        <td class="center">17</td>
+                                                        <td class="center">15xxxxxxxxx</td>
+                                                        <td>李一一</td>
+                                                        <td>2014/04/17</td>
+                                                    </tr>
+                                                    
+                                                </tbody>
+
+                                            </table>
+                                                   	<div class="detail" id="panelDetail" style="position: absolute; top:0; right: 0; width: 480px; height: 100%;">
+		<div class="header">
+			<span class="title">李女士</span>
+			<span class="info">
+				<span class="clr-green">2013-09-20</span>
+				<span class="clr-silver">/</span>
+				<span class="clr-green">2013-09-24</span>
+			</span>
+			<div class="edit">
+				<div class="switch switch-small make-switch"
+					data-on-label="保存"
+					data-off-label="编辑"
+					data-on="success">
+					<input id="checkEdit" type="checkbox" />
+				</div>
+				<a class="cancel icon-undo">取消</a>
+			</div>
+			<div class="x">
+				<a href="###"><i class="close icon-remove"></i></a>
+			</div>
+		</div>
+		<div class="splitline"></div>
+		<div class="tooltips">
+			<a href="###">核对</a>
+			<a href="###">回访</a>
+			<a href="###">二次核对</a>
+			<a href="###">三次核对</a>
+			<a href="###">发送短信</a>
+			<a href="###">转出</a>
+			<a href="###">转入</a>
+			<!--<div class="static">
+				<a>其它</a>
+			</div>-->
+		</div>		
+		<div class="content" id="panelDetailContent">
+			<ul class="page-view">
+				<li>
+					<span><strong>预约号</strong> 62129</span>
+				</li>
+				<li>
+					<span><strong>姓名</strong> 李女士</span>
+					<span><strong>年龄</strong> 18 岁</span>
+				</li>
+				<li>
+					<span><strong>电话</strong> 18012341234</span>
+					<span><strong>QQ</strong> 132456789</span>
+				</li>		
+				<li>
+					<span><strong>身份ID</strong> YWT12312312424A</span>
+				</li>
+				<li>
+					<span><strong>电子邮箱</strong> me@zhujinliang.com</span>
+				</li>
+				<li>
+					<span><strong>联系地址</strong> 山东省济南市英雄山路21号</span>
+				</li>
+				<li>
+					<span><strong>病种</strong> ---</span>
+					<span><strong>挂号先生</strong> ---</span>
+				</li>
+				<li>
+					<span><strong>初次预约</strong> 2014-03-19</span>
+					<span><strong>参加活动</strong> ---</span>
+				</li>
+				<li>
+					<span><strong>预约方式</strong> ---</span>
+					<span><strong>网络平台</strong> ---</span>
+				</li>				
+				<li>
+					<span><strong>网站</strong> ql91.cn</span>
+					<span class="text-none"><strong>关键词</strong> 无</span>
+				</li>
+				<li>
+					<span><strong>病情描述</strong> 无</span>
+				</li>				
+				<li>
+					<span><strong>提交客服</strong> 客服一</span>
+					<span><strong>提交IP</strong> 192.168.1.123(局域网)</span>
+				</li>
+				<li>
+					<span><strong>备注</strong> 无</span>
+				</li>
+				<li class="folding">
+					<a>
+						<i class="expand glyphicon icon-plus-sign"></i>
+						<i class="fold glyphicon icon-minus-sign"></i>
+						<span>手机短信发送记录</span>
+						<span class="badge">2</span>
+					</a>
+					<ul>
+						<li>
+							<span class="clr-gray">
+							2013-12-23 17:25:25&nbsp;&nbsp;<i class="icon-phone"></i>18012345678&nbsp;&nbsp;
+							<span class="clr-green">已送达</span>
+							</span>
+						</li>
+						<li>
+							<span><b>短信内容</b> 我们是最好的团队，济南 No.1</span>
+						</li>
+						<li>
+							<span class="clr-gray">
+							2013-12-23 17:25:25&nbsp;&nbsp;<i class="icon-phone"></i>18012345678&nbsp;&nbsp;
+							<span class="clr-red">发送失败</span>
+							</span>
+						</li>
+						<li>
+							<span><b>短信内容</b> 我们是最好的团队，济南 No.1</span>
+						</li>
+					</ul>
+				</li>
+				<li class="folding">
+					<a>
+						<i class="expand glyphicon icon-plus-sign"></i>
+						<i class="fold glyphicon icon-minus-sign"></i>
+						<span>先生说明</span>
+						<span class="badge">0</span>
+					</a>
+					<ul>
+					</ul>
+				</li>
+				<li class="folding">
+					<a>
+						<i class="expand glyphicon icon-plus-sign"></i>
+						<i class="fold glyphicon  icon-minus-sign"></i>
+						<span>历史编辑记录</span>
+						<span class="badge">0</span>
+					</a>
+					<ul>
+					</ul>
+				</li>
+			</ul>
+			<ul class="page-edit">
+				<li>
+					<span><strong>预约号</strong> 62129</span>
+				</li>
+				<li>
+					<span><strong>姓名</strong><input value="李一二" /></span>
+					<span><strong>年龄</strong><input value="18" /></span>
+				</li>
+				<li>
+					<span><strong>电话</strong><input value="18012341234" /></span>
+					<span><strong>QQ</strong><input value="13456789" /></span>
+				</li>		
+				<li>
+					<span><strong>身份ID</strong><input value="YWT12312312424A" /></span>
+				</li>
+				<li>
+					<span><strong>电子邮箱</strong><input value="me@zhujinliang.com" /></span>
+				</li>
+				<li>
+					<span><strong>联系地址</strong><input value="山东省济南市英雄山路21号" /></span>
+				</li>
+				<li>
+					<span><strong>病种</strong><select>
+						<option>---</option>
+						<option value="1">输卵管不通</option>
+						<option value="2">多囊卵巢</option>
+						<option value="3">子宫内膜异位症</option>
+						<option value="4">孕前检查</option>
+						<option value="5">习惯性流产</option>
+						<option value="33">排卵功能障碍</option>
+						<option value="7">胎停育</option>
+						<option value="8">卵巢早衰</option>
+						<option value="9">月经不调</option>
+						<option value="10">内分泌失调</option>
+						<option value="11">少精</option>
+						<option value="12">弱精</option>
+						<option value="13">无精</option>
+						<option value="14">死精</option>
+						<option value="15">精索静脉曲张</option>
+						<option value="29">阳痿</option>
+						<option value="30">早泄</option>
+						<option value="18">前列腺炎</option>
+						<option value="19">精液异常</option>
+						<option value="24">妇科炎症</option>
+						<option value="21">睾丸疾病</option>
+						<option value="23">优生抗体</option>
+						<option value="25">卵巢囊肿</option>
+						<option value="26">子宫肌瘤</option>
+						<option value="27">流产</option>
+						<option value="31">性功能异常</option>
+						<option value="32">包皮包茎</option>
+						<option value="34">孕期检查</option>
+						<option value="35">不孕待查</option>
+					</select></span>
+					<span><strong>挂号先生</strong><select>
+						
+					</select></span>
+				</li>
+				<li>
+					<span><strong>预约时间</strong><input value="2014-03-19"
+						class="make-datetimepicker" data-date-format="yyyy-mm-dd" /></span>
+					<span><strong>参加活动</strong><select>
+						<option value="1">---</option>
+						<option value="1">十一促销</option>
+						<option value="1">仲秋促销</option>
+					</select></span>
+				</li>
+				<li>
+					<span><strong>预约方式</strong><select>
+						<option>---</option>
+						<option value="14">其他</option>
+						<option value="2">电话</option>
+						<option value="3">商务通</option>
+						<option value="4">QQ</option>
+						<option value="10">400</option>
+						<option value="15">业务电话</option>
+						<option value="16">百度商桥</option>
+						<option value="17">回访</option>
+						<option value="18">手机</option>
+						<option value="19">快商务通</option>
+						<option value="20">快400</option>
+						<option value="21">商务通1</option>
+						<option value="22">网络后台</option>
+						<option value="23">NET11998140</option>
+						<option value="24">NET48384662</option>
+						<option value="25">SWT23339992</option>
+					</select></span>
+					<span><strong>网络平台</strong><select>
+						<option value="0">---</option>
+						<option value="1">baidu</option>
+						<option value="2">谷歌</option>
+						<option value="3">sogou</option>
+						<option value="4">soso</option>
+						<option value="5">有道</option>
+						<option value="6">必应</option>
+						<option value="7">39健康网</option>
+						<option value="8">寻医问药</option>
+						<option value="9">120ask</option>
+						<option value="10">360搜索</option>
+						<option value="11">无搜索轨迹</option>
+						<option value="12">直接进入网站</option>
+						<option value="13">googleads</option>
+						<option value="14">电话</option>
+						<option value="15">400免费电话</option>
+						<option value="16">QQ</option>
+						<option value="17">业务电话</option>
+						<option value="18">无</option>
+						<option value="19">快商务通</option>
+						<option value="27">百度商桥</option>
+						<option value="21">网站后台</option>
+						<option value="22">zhidao.baidu</option>
+						<option value="23">so.360.cn</option>
+						<option value="29">网站回拨</option>
+						<option value="26">新闻源</option>
+						<option value="28">有问必答手机</option>
+					</select></span>
+				</li>				
+				<li>
+					<span><strong>网站</strong><select>
+						<option value="0">---</option>
+						<option value="1">ql91.com</option>
+						<option value="2" selected>ql91.cn</option>
+						<option value="3">ql91.com.cn</option>
+						<option value="4">hhfww.cn</option>
+						<option value="5">honghui.org</option>
+						<option value="15">66662666.com</option>
+						<option value="14">sdsmyy.com</option>
+						<option value="13">yunyu7.com</option>
+						<option value="12">99yunyu.com</option>
+						<option value="10">ql91.net</option>
+						<option value="11">sdhhfk.com</option>
+						<option value="16">sdebh.com</option>
+						<option value="17">120ent.com</option>
+						<option value="18">sdjmqz120.com</option>
+						<option value="19">电话</option>
+						<option value="20">无</option>
+						<option value="21">ifuwawa.com</option>
+						<option value="22">m.ql91.com</option>
+						<option value="23">w.bjd.com</option>
+						<option value="24">w.zjrb.cn</option>
+						<option value="25">400.99yunyu.com</option>
+						<option value="26">400.yunyu7.com</option>
+						<option value="27">400.inanke.net</option>
+					</select></span>
+					<span class="text-none"><strong>关键词</strong><input value="无" /></span>
+				</li>
+				<li>
+					<span><strong>病情描述</strong><input value="无" /></span>
+				</li>
+				<li>
+					<span><strong>备注</strong><textarea rows="3">无</textarea></span>
+				</li>
+				<li class="actions">
+					<a class="btn btn-sm btn-danger">删除</a>
+					
+					<a class="pull-right btn btn-sm btn-success">保存</a>
+					<a class="pull-right btn btn-sm btn-link">取消编辑</a>					
+				</li>
+			</ul>
+		</div>
+		<div class="footer">
+			<div class="tooltips">
+			<a href="###">核对</a>
+			<a href="###">回访</a>
+			<a href="###">二次核对</a>
+			<a href="###">三次核对</a>
+			<a href="###">发送短信</a>
+			<a href="###">转出</a>
+			<a href="###">转入</a>
+			<!--<div class="static">
+				<a>其它</a>
+			</div>-->
+		</div>
+	</div>
+
+</div>
+                             <!--detail-->
+                              </div>
+                           </div>  
+                        </div><!--/content-body -->
+                         <!-- content-footer -->
+                          <!--toolstrip-->
+                        <div class="content-footer col-md-12">
+                         <div class="row">
+                           <div class="col-md-12">
+                             <div class="col-md-8 pull-left">
+                             <ul class="content-footer-action">
+                              <li>
+                               <div class=" btn-group dropup">
+                                 <div class="special" data-toggle="dropdown"><i class=" icon-caret-up"></i>选择<span></span>工作</div>
+                                <ul class="dropdown-menu dropdown-popover  pull-left" role="menu" aria-labelledby="dLabel"> 
+                                  <li class="col-md-12">全选</li>
+                                  <li class="col-md-12">反选</li>
+                                  <li class="col-md-12">全选</li>
+                                  <li class="popover-footer new col-md-12 ">
+                                       <div class="col-md-1 pull-right">
+                                            <button class="btn btn-sm dropup-buttom  pull-right" href="/">确定</button>
+                                        </div>
+                                  </li>
+                                  </ul>
+                               </div>
+                              </li>
+                              <li class="divider"></li>
+                                
+                              <li>
+                               <div class=" btn-group dropup">
+                                 <div class="special" data-toggle="dropdown"><i class=" icon-caret-up"></i>查询工作</div>
+                                 <ul class="dropdown-menu dropdown-popover  pull-left" role="menu" aria-labelledby="dLabel"> 
+                                  <li class="col-md-12">查询</li>
+                                  
+                                  <li class="popover-footer new col-md-12 ">
+                                       <div class="col-md-1 pull-right">
+                                            <button class="btn btn-sm dropup-buttom  pull-right" href="/">确定</button>
+                                        </div>
+                                  </li>
+                                  </ul>
+                               </div>
+                              </li>
+                                <li class="divider"></li>
+                              <li>
+                               <div class=" btn-group dropup">
+                                <div class="special" data-toggle="dropdown"><i class=" icon-caret-up"></i>工作日期</div>
+                                <div class="dropdown-menu">内容</div>
+                              </div>
+                             </li>
+                             <li class="divider"></li>
+                              <li>
+                               <div class=" btn-group dropup">
+                               <div class="special" data-toggle="dropdown"><i class=" icon-caret-up"></i>工作日期</div>
+                               <div class="dropdown-menu">内容</div>
+                               </div>
+                              </li>
+                              <li class="divider"></li>
+                              <li>
+                               <div class=" btn-group dropup">
+                               <div class="special" data-toggle="dropdown"><i class=" icon-caret-up"></i>工作日期</div>
+                               <div class="dropdown-menu">内容</div>
+                               </div>
+                               </li>
+                             </ul>
+                            </div>
+                            <div class="col-md-3 pull-right">
+                            <ul class="pagination">
+                               <li><a href="#">&laquo;</a></li>
+                               <li class="mixin"><a href="#">1</a></li>
+                               <li class="mixin"><a href="#">2</a></li>
+                               <li class="mixin"><a href="#">3</a></li>
+                               <li class="mixin"><a href="#">4</a></li>
+                               <li class="mixin"><a href="#">5</a></li>
+                               <li><a href="#">&raquo;</a></li>
+                           </ul>
+
+                           </div>
+                           
+                           <div class="popover1">
+                           </div>
+
+                           </div>
+                         
+                         </div>
+                        
+                        </div>
+                          <!--/toolstrip-->
+                         <!-- /content-footer -->
+                        
+                    </div><!-- /content -->
+                </div><!-- /span content -->
+            </div>
+        </section>
+
+        <!-- javascript
+        <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+        ================================================== -->
+	    <script type="text/javascript" src="jQuery-1.11.0.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!-- left -->
+        <script src="js/left/modernizr.custom.js"></script>
+        <script src="js/left/classie.js"></script>
+        <script src="js/left/gnmenu.js"></script>
+	    <script type="text/javascript" src="bootstrap-switch/js/bootstrap-switch.js"></script>
+	    <script type="text/javascript" src="bootstrap-datetimepicker/js/bootstrap-datetimepicker.js"></script>
+        
+        <!-- 鼠标经过提示 -->
+      <script> $('#myModal').modal(options)</script>
+        <!--菜单点击效果-->
+        <script type="text/javascript">
+		 $(function(){
+			 $(".nav li").click( function(){
+			   $(this).addClass("active").siblings().removeClass();
+				 });
+		 });
+		 $(document).ready(function(){
+           $("tbody tr").click(function(){
+             $(".detail").fadeIn(1500);
+             });
+			 $(".x").click(function(){
+             $(".detail").fadeOut(1500);
+             });
+           });
+		 
+        </script>
+      <!-- 左侧菜单-->
+        <script>
+			new gnMenu( document.getElementById( 'gn-menu' ) );
+		</script>
+       
+     <!--modalNewOrder-->  
+	<script>
+		//$('#modalNewOrder').modal('show');    立即弹出模态框，用于测试
+
+		$('#formLeft input, #formLeft select').focus(function(){
+			$('#formLeft').addClass('hl');
+			$('#formRight').removeClass('hl');
+		});
+		$('#formRight input, #formRight select, #formRight textarea').focus(function(){
+			$('#formLeft').removeClass('hl');
+			$('#formRight').addClass('hl');
+		});
+		$('#formLeft input:first').focus();
+
+		$('#formLeft .btnAppendTel').bind('click keyup', function(e){
+			if(e.type == 'keyup' && e.keyCode != 32) return;
+			var target = $(this).attr('data');
+			$('#formLeft').addClass(target);
+			$('#formLeft .group-'+target+' input').focus();
+		});
+		
+		$('.make-datetimepicker').datetimepicker();
+	</script>
+  <!--fadeIn --->
+<script type="text/javascript">
+	$('.content .folding a').click(function(){
+		$(this).parent().toggleClass('opened');
+	});
+	$(window).resize(function(){
+		$('#panelDetailContent').css('height', $('#panelDetail').height()-48-1-32-32);
+	}).resize();
+	$('#checkEdit').change(function(){
+		if($(this).is(':checked')) {
+			$('#panelDetail').addClass('editing');
+		} else {
+			$('#panelDetail').removeClass('editing');
+		}
+	});
+
+	$('.make-datetimepicker').datetimepicker();
+</script>
+
+   </body>
+</html>
